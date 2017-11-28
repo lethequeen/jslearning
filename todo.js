@@ -8,6 +8,7 @@ submit.onclick = function () {
   text.value = "";
   localStorage.setItem("boxs", box.innerHTML);
   del();
+  done();
 }
 
 
@@ -17,13 +18,9 @@ function addtask() {
 	div1.style.height = "20px";
   div1.className = "delbox";
 	box.appendChild(div1);
-	var input1 = document.createElement("input");
-	input1.style.width = "10px";
-	input1.style.float = "left";
-	input1.type = "checkbox";
-	div1.appendChild(input1);
 	var div2 = document.createElement("div");
   div2.innerText = text.value;
+  div2.className = "div2";
   div2.style.color = "red";
   div2.style.fontSize = "8px";
   div2.style.float = "left";
@@ -32,6 +29,9 @@ function addtask() {
 	input2.style.width = "30px";
 	input2.style.height = "15px";
 	input2.style.float = "left";
+  input2.style.backgroundColor = "red";
+  input2.style.marginLeft = "10px";
+  input2.style.color = "white";
 	input2.type = "submit";
 	input2.value = "del";
 	input2.style.fontSize = "5px";
@@ -39,6 +39,18 @@ function addtask() {
 	div1.appendChild(input2);
   console.log(box);
 }
+
+//完成操作
+function done() {
+  var donetext = document.querySelectorAll('.div2');
+  donetext.forEach(function(val, index) {
+    donetext[index].onclick = function() {
+      donetext[index].style.color = "#fff";
+      localStorage.setItem("boxs", box.innerHTML);
+    }
+  })
+}
+
 
 //删除操作
 function del () {
@@ -54,22 +66,16 @@ function del () {
 
 //使用localStorage本地存储
 window.onload = function () {
-  if (localStorage.boxs != "") {
-    box.innerHTML = localStorage.boxs;
-  }
+  box.innerHTML = localStorage.boxs;
   del();
+  done();
+
+//清空storage
+var submit1 = document.getElementById('submit1');
+submit1.onclick = function() {
+  localStorage.removeItem("boxs");
 }
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
