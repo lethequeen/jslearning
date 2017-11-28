@@ -5,10 +5,10 @@ var box = document.getElementById('box');
 //按钮操作
 submit.onclick = function () {
   addtask();
-  text.value = "";
-  localStorage.setItem("boxs", box.innerHTML);
   del();
   done();
+  localStorage.setItem("boxs", box.innerHTML);
+  text.value = "";
 }
 
 
@@ -65,17 +65,10 @@ function del () {
 }
 
 //使用localStorage本地存储
-window.onload = function () {
+
   box.innerHTML = localStorage.boxs;
   del();
   done();
 
-//清空storage
-var submit1 = document.getElementById('submit1');
-submit1.onclick = function() {
-  localStorage.removeItem("boxs");
-}
-
-}
 
 
