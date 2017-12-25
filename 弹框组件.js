@@ -1,0 +1,1 @@
+var inputs = document.getElementsByTagName('input');
