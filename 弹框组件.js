@@ -7,6 +7,7 @@ inputs.forEach(function (val, index) {
 	  inputs[index].setAttribute("disabled","disabled");
 	  var divtoptext = document.querySelectorAll('.divtoptext');
 	  divtoptext[index].innerText = "这是第" + (index+1) + "个弹框";
+	  close ();
 	};
 })
 
@@ -29,26 +30,29 @@ function createbox () {
 //有问题
 function close () {
 	var bottonrights = document.querySelectorAll('.bottonright');
+	console.log(bottonrights);
   bottonrights.forEach(function (val, index) {
   	var divboxs = document.querySelectorAll(".divbox");
   	bottonrights[index].onclick = function () {
   		container.removeChild(divboxs[index]);
   		console.log(container);
+  		inputs[index].removeAttribute("disabled");
   	}
   })
   var bottonb1s = document.querySelectorAll('.bottonb1');
+  console.log(bottonb1s);
   bottonb1s.forEach(function (val, index) {
   	var divboxs = document.querySelectorAll(".divbox");
   	bottonb1s[index].onclick = function () {
   		container.removeChild(divboxs[index]);
+  		inputs[index].removeAttribute("disabled");
   	}
   })
 }
-close();
 
 var confirms = document.querySelectorAll('bottonb2');
-confirms.forEach(function () {
-	confirms.onclick = function () {
+confirms.forEach(function (val, index) {
+	confirms[index].onclick = function () {
 		var xml = new XMLHttpRequest();
     xml.open("POST", "http://", true);
     xml.withCredentials = true;
