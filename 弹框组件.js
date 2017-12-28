@@ -27,7 +27,6 @@ function createbox () {
   console.log(divbox);
 }
 
-//有问题
 function close () {
 	var bottonrights = document.querySelectorAll('.bottonright');
 	console.log(bottonrights);
