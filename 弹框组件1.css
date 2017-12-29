@@ -1,0 +1,93 @@
+body {
+	background-color: pink;
+}
+
+input {
+	display: block;
+	width: 150px;
+	height: 30px;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #ccc;
+	background-color: white;
+	-webkit-border-radius: 50px;
+	text-align: center;
+}
+
+.divbox {
+	width: 300px;
+	height: 200px;
+	background-color: white;
+	-webkit-border-radius: 10px;
+	vertical-align: center;
+	overflow: hidden;
+	border: 1px solid #e75187;
+	position: fixed;
+	top: 30%;
+  z-index: 2;
+}
+
+#divbox0{
+	left: 10%;
+}
+
+#divbox1{
+	left: 40%;
+}
+
+#divbox2{
+	left: 70%;
+}
+
+.divbox p {
+	color: #ccc;
+	margin-left: 10px;
+}
+.divtop {
+	width: 300px;
+	height: 30px;
+	color: white;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-left: 10px;
+	background-color: #e75187;
+}
+
+.divtoptext {
+	width:200px;
+	height: 30px;
+	float: left;
+}
+
+.bottonright {
+	width: 20px;
+	height: 20px;
+	color: black;
+	font-size: 20px;
+	margin-top: 0px;
+	margin-right: 15px;
+	text-align: center;
+	-webkit-border-radius: 100px;
+	background-color: #e4ecef;
+	float: right;
+}
+
+.bottonright:hover {
+	background-color: #ccc;
+}
+
+.bottonb1 {
+	color: #ccc;
+	background-color: #e75187;
+	float:right;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.bottonb2 {
+	color: #ccc;
+	background-color: #e75187;
+	float:right;
+  margin-top: 30px;
+  margin-right: 20px;
+}
