@@ -3,6 +3,7 @@ var inputs = document.querySelectorAll('input');
 console.log(inputs);
 console.log(inputs[0]);
 inputs[0].onclick = function () {
+	inputs[0].setAttribute("disabled", "disabled");
 	var id0 = "divbox0";
 	var urlitem0 = "http://000";
 	var divtoptext0 = "这是第一个弹框";
@@ -14,6 +15,7 @@ inputs[0].onclick = function () {
 }
 console.log(inputs[0]);
 inputs[1].onclick = function () {
+	inputs[1].setAttribute("disabled", "disabled");
 	var id1 = "divbox1";
 	var urlitem1 = "http://111";
 	var divtoptext1 = "这是第二个弹框";
@@ -24,6 +26,7 @@ inputs[1].onclick = function () {
   input2.closebox();
 }
 inputs[2].onclick = function () {
+	inputs[2].setAttribute("disabled", "disabled");
 	var id2 = "divbox2";
 	var urlitem2 = "http://222";
 	var divtoptext2 = "这是第三个弹框";
