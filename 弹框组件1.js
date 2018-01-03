@@ -19,7 +19,7 @@ inputs[1].onclick = function () {
 	var id1 = "divbox1";
 	var urlitem1 = "http://111";
 	var divtoptext1 = "这是第二个弹框";
-	var divtext1 = "这是第二个弹框的内容，这是第二个弹框的内容";
+	var divtext1 = "this is the second,hahahahahaha";
 	var input2 = new AlertTtem(id1, urlitem1, divtoptext1, divtext1);
 	input2.createbox();
 	input2.confirm();
@@ -30,7 +30,7 @@ inputs[2].onclick = function () {
 	var id2 = "divbox2";
 	var urlitem2 = "http://222";
 	var divtoptext2 = "这是第三个弹框";
-	var divtext2 = "这是第三个弹框的内容，这是第三个弹框的内容"
+	var divtext2 = "come baby let us go"
 	var input3 = new AlertTtem(id2, urlitem2, divtoptext2, divtext2);
 	input3.createbox();
 	input3.confirm();
