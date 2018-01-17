@@ -1,0 +1,43 @@
+@color: #4D926F;
+#header {
+	color: @color;
+}
+
+.round-colors (@radius: 5px) {
+	bor-radius: @radius;
+	-webkit-bor-radius: @radius;
+	-moz-border-radius: @radius;
+}
+#header {
+	.round-colors;
+}
+#footer {
+	.round-colors;
+}
+
+#header {
+	h1 {
+	font-size: 26px;
+	font-weight: bold;
+	}
+	p {
+	font-size: 12px;
+	  a{
+	  text-decoration: none;
+	  }
+	}
+}
+
+@the-border: 1px;
+@base-color: #111;
+@red: #842210;
+#header {
+	color: @base-color;
+	border-left: @the-border;
+	border-right: @the-border;
+}
+#footer {
+	color: @base-color + #003300;
+	border-color: desaturate(@red, 10%);
+}
+
