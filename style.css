@@ -1,0 +1,32 @@
+#header {
+  color: #4D926F;
+}
+#header {
+  bor-radius: 5px;
+  -webkit-bor-radius: 5px;
+  -moz-border-radius: 5px;
+}
+#footer {
+  bor-radius: 5px;
+  -webkit-bor-radius: 5px;
+  -moz-border-radius: 5px;
+}
+#header h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+#header p {
+  font-size: 12px;
+}
+#header p a {
+  text-decoration: none;
+}
+#header {
+  color: #111;
+  border-left: 1px;
+  border-right: 1px;
+}
+#footer {
+  color: #114411;
+  border-color: #7d2717;
+}
